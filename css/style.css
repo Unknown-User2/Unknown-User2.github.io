@@ -1,0 +1,9 @@
+@font-face {
+    font-family: pixel;
+    src: url("fonts/pixel.otf") format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: pixel;
+}
