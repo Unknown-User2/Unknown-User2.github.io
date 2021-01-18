@@ -1,9 +1,11 @@
-@font-face {
-    font-family: pixel;
-    src: url("fonts/pixel.otf") format('otf');
-    font-weight: normal;
-    font-style: normal;
-}
 body {
-    font-family: pixel;
+    font-family: sans-serif;
+}
+input {
+    /* border: 0;
+    margin: 0; */
+    text-align: center !important;
+}
+input :hover {
+
 }
