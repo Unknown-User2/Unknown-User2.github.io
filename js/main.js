@@ -12,4 +12,4 @@ oX.onkeypress = function(e){
         console.log(oX.value);
     }
     console.log(oX.value);
-    }
+}
