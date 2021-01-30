@@ -4,34 +4,23 @@
     align-items: center;
 }
 
+/* light mode */
 body {
-    --text-color: #222;
-    --bkg-color: #fff;
+    color: #222;
+    background: #fff;
 }
-body.dark-theme {
-    --text-color: #eee;
-    --bkg-color: #121212;
+a {
+    color: #0033cc;
 }
-  
-@media (prefers-color-scheme: dark) {
-    /* defaults to dark theme */
-    body {
-        --text-color: #eee;
-        --bkg-color: #121212;
-    }
-    body.light-theme {
-        --text-color: #222;
-        --bkg-color: #fff;
-    }
+/* dark mode */
+body.darkMode {
+    color: #eee;
+    background: #121212;
+}
+body.darkMode a {
+    color: #809fff;
 }
 
-body {
-    background: var(--bkg-color);
-}
-  
-h1, p {
-    color: var(--text-color);
-}
 ul{
     list-style-type: none;
 }
