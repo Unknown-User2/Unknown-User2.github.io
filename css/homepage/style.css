@@ -32,7 +32,8 @@ li {
 #projectList {
     display: table;
     padding: 7px;
-    border: 1px solid ;
+    border: 1px;
+    border-style: solid;
     font-size: 95%;
 }
 
