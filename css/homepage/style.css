@@ -30,10 +30,9 @@ li {
     text-indent: -2em;
 }
 #projectList {
-    display: table;
+    display:inline-table;
     padding: 7px;
     border: 1px;
     border-style: solid;
     font-size: 95%;
 }
-
