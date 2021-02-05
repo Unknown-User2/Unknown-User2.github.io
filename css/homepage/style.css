@@ -30,10 +30,22 @@ body.darkMode button {
 button {
     border-style: solid;
     border-radius: 3px;
+    
 }
 .project {
     margin-bottom: 0px;
     margin-top: 0px;
+}
+#linksList {
+    display: table;
+    padding: 7px;
+    border-width: 1px;
+    border-radius: 3px;
+    border-style: solid;
+    font-size: 95%;
+}
+#linkListTitle {
+    margin-top: 5px;
 }
 #projectListTitle{
     margin-top: 5px;
