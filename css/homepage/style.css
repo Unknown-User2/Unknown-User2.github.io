@@ -36,6 +36,10 @@ button {
     margin-bottom: 0px;
     margin-top: 0px;
 }
+.link {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
 #linksList {
     display: table;
     padding: 7px;
