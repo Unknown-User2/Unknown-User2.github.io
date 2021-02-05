@@ -6,6 +6,7 @@ body {
 a {
     color: #0033cc;
 }
+
 /* dark mode */
 body.darkMode {
     color: #eee;
@@ -25,14 +26,6 @@ body.darkMode button {
     font-family: sans-serif;
     text-align:center;
     align-items: center;
-}
-ul{
-    list-style-type: none;
-}
-li {
-    text-align: left;
-    padding-left: 2em;
-    text-indent: -2em;
 }
 button {
     border-style: solid;
