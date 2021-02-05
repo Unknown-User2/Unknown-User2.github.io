@@ -1,0 +1,44 @@
+/* light mode */
+body {
+    color: #222;
+    background: #fff;
+}
+a {
+    color: #0033cc;
+}
+/* dark mode */
+body.darkMode {
+    color: #eee;
+    background: #121212;
+}
+body.darkMode a {
+    color: #809fff;
+}
+
+* {
+    font-family: sans-serif;
+    text-align:center;
+    align-items: center;
+}
+ul{
+    list-style-type: none;
+}
+li {
+    text-align: left;
+    padding-left: 2em;
+    text-indent: -2em;
+}
+.project {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+#projectListTitle{
+    margin-top: 5px;
+}
+#projectList {
+    display:inline-table;
+    padding: 7px;
+    border: 1px;
+    border-style: solid;
+    font-size: 95%;
+}
