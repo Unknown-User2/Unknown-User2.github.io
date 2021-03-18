@@ -1,0 +1,41 @@
+body {
+    color: #eee;
+    background: #15292B;
+}
+body a {
+    color: #809fff;
+}
+body button {
+    color: #eee;
+    border-style: solid;
+    border-radius: 3px;
+    background-color: #15292B;
+}
+* {
+    font-family: sans-serif;
+    text-align:center;
+    align-items: center;
+}
+button {
+    border-style: solid;
+    border-radius: 3px;
+    
+}
+
+#header {
+    background-color: #132527;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding:10px;
+}
+#footer {
+    background-color: #132527;
+    position: fixed;
+    text-align: center;
+    margin-top:-100px;
+    height:100px;
+    bottom: 0;
+    width: 100%;
+    padding-top: 10px;
+}
