@@ -1,6 +1,8 @@
+/* elements */
 body {
     color: #eee;
-    background: #15292B;
+    background: #172e30;
+    margin: 0;
 }
 body a {
     color: #809fff;
@@ -22,20 +24,39 @@ button {
     
 }
 
+/* ids */
 #header {
     background-color: #132527;
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding:10px;
+    padding: 5px;
 }
-#footer {
+
+#nav {
+    overflow: hidden;
+    background-color: #15292b;
+}
+#nav a {
+    float: left;
+    display: block;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+#nav a:hover {
     background-color: #132527;
-    position: fixed;
-    text-align: center;
-    margin-top:-100px;
-    height:100px;
+}
+
+#footer {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
-    width: 100%;
-    padding-top: 10px;
+    background-color: #132527;
+    padding: 5px;
+}
+
+/* classes */
+.footerText {
+	display: inline-block;
+	vertical-align: top;
+    padding: 0px 20px;
 }
