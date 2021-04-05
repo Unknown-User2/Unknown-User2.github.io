@@ -31,3 +31,13 @@ a:visited {
   display: table;
   clear: both;
 }
+
+.main {
+  position: relative;
+  left: 525px;
+  float: left;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(67, 67, 67);
+
+}
