@@ -12,7 +12,7 @@ var config = {
   // and branch to get files from.
   github: {
     username: 'Unknown-User2',
-    repo: 'https://github.com/unknown-user2.gituhb.io/',
+    repo: 'https://github.com/Unknown-User2/Unknown-User2.github.io/',
     branch: 'blogTesting',
     host: 'https://unknown-user2.github.io/',
     // Use prefix option if your site is located in a subdirectory.
