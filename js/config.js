@@ -13,7 +13,7 @@ var config = {
   github: {
     username: 'Unknown-User2',
     repo: 'https://github.com/unknown-user2.gituhb.io/',
-    branch: 'main',
+    branch: 'blogTesting',
     host: 'https://unknown-user2.github.io/',
     // Use prefix option if your site is located in a subdirectory.
     // prefix: 'subdirectory',
