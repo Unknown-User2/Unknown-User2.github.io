@@ -2,38 +2,45 @@
 <html>
 	<head>
 		<title>Minecraft Energy Calculator</title>
+		<meta charset="utf-8">
 		<link rel="stylesheet" href="style.css">
 		<script src="main.js" defer></script>
 		<link rel="icon" href="https://avatars.githubusercontent.com/u/46464404?v=4">
 	</head>
 	<body>
-		
 		<h1>Minecraft Energy Calculator</h1>
 		<h3>A calculator for the different minecraft energy types added by mods</h3>
 		
 		<div id="inputsDiv">
-			<input type="number" id="energyInput" onkeypress="return isNumber(event)" placeholder="0">	
+			<input type="number" id="input" onkeypress="return isNumber(event)" onkeyup="convert()" placeholder="0">	
 			
 			<h3 id="equals">=</h3>
 			
-			<input type="number" id="result" value="0" readonly>
+			<input type="number" id="output" readonly>
 		</div>
 
 		<div id="energySelDiv">
-			<select class="energySel">
-				<option value="0">RedstoneFlux(RF)</option>
-				<option value="1">megaRedstoneFlux(mRF)</option>
-				<option value="2">gigaRedstoneFlux(gRF)</option>
+			<select class="energySel" id="side0" onchange="getSide()">
+				<option value="rf">RedstoneFlux(RF)</option>
+				<option value="krf">kiloRedstoneFlux(kRF)</option>
+				<option value="mrf">megaRedstoneFlux(mRF)</option>
+				<option value="grf">gigaRedstoneFlux(gRF)</option>
+				<option value="eu">EnergyUnit(EU)</option>
+				<option value="j">Joule(J)</option>
+				<option value="mj">MinecraftJoule(MJ)</option>
 			</select>
 		
-			<h3 id="to">To<h3>
+			<h3 id="to">To</h3>
 			
-			<select class="energySel">
-				<option value="0">RedstoneFlux(RF)</option>
-				<option value="1">megaRedstoneFlux(mRF)</option>
-				<option value="2">gigaRedstoneFlux(gRF)</option>
+			<select class="energySel" id="side1" onchange="getSide()">
+				<option value="rf">RedstoneFlux(RF)</option>
+				<option value="krf">kiloRedstoneFlux(kRF)</option>
+				<option value="mrf">megaRedstoneFlux(mRF)</option>
+				<option value="grf">gigaRedstoneFlux(gRF)</option>
+				<option value="eu">EnergyUnit(EU)</option>
+				<option value="j">Joule(J)</option>
+				<option value="mj">MinecraftJoule(MJ)</option>
 			</select>	
 		</div>
-		
 	</body>
 </html>
