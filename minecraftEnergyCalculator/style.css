@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap'); /* adds lato font */
+
+body {
+	font-family: "Lato";
+	color: rgb(212, 212, 212);
+	background-color: rgb(46, 46, 46);
+	text-align: center;
+	align-items: center;
+}
+
+select {
+	text-align: center;
+	font-family: "Lato";
+	font-size: 18.72px;
+	width: 260px;
+	height: 35px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(35, 35, 35);
+	margin: 10px 0 10px 0;
+	color: rgb(212, 212, 212);
+	background-color: rgb(56, 56, 56);
+
+	/* for disabling the arrow */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+input {
+	text-align: center;
+	font-family: "Lato";
+	font-size: 18.72px;
+	width: 260px;
+	height: 35px;
+	margin 10px 0 10px 0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(35, 35, 35);
+	color: rgb(212, 212, 212);
+	background-color: rgb(56, 56, 56);
+}
+
+#equals {
+	margin: 10px 10px 10px 10px;
+}
+
+#to {
+	margin: 10px 10px 10px 5px;
+}
+
+#inputsDiv {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: baseline;
+}
+
+#energySelDiv {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: baseline;
+}
+
+/* Removes arrows from number input for chrome safari edge opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Removes arrows from number input for firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
