@@ -19,3 +19,29 @@ a:visited {
 .timg {
   border-radius: 3px;
 }
+
+
+/* nav bar stuff */
+ul.nav {
+	list-style-type: none; 
+	margin: 0; 
+	padding: 0; 
+	overflow: hidden; 
+	background-color: rgb(51, 51, 51);
+	height: 100%;
+}
+
+li.nav {
+	float: left;
+}
+
+li.nav a {
+	display: block; 
+	text-align: center; 
+	padding: 14px 16px; 
+	text-decoration: none;
+}
+
+li.nav a:hover {
+	background-color: rgb(29, 29, 29);
+}
