@@ -7,6 +7,8 @@ var side0Val = side0.value
 var side1Val = side1.value
 var inputVal = input.value
 
+output.value = 0
+
 // makes sure everything inputed is a number
 function isNumber(key) {
 	const chr = (key.which) ? key.which : key.keyCode;
@@ -112,16 +114,16 @@ function check() {
 			break
 		// EU to ...
 		case "eu|rf":
-			output.value = inputVal * 4
+			output.value = toRF(side0Val, inputVal)
 			break
 		case "eu|krf":
-			output.value = (inputVal * 4) / 1000
+			output.value = toRF(side0Val, inputVal) / 1000
 			break
 		case "eu|mrf":
-			output.value = (inputVal * 4) / 1000000
+			output.value = toRF(side0Val, inputVal) / 1000000
 			break
 		case "eu|grf":
-			output.value = (inputVal * 4) / 1000000000
+			output.value = toRF(side0Val, inputVal) / 1000000000
 			break
 		case "eu|eu":
 			sameConvert()
@@ -134,16 +136,16 @@ function check() {
 			break
 		// J to ...
 		case "j|rf":
-			output.value = inputVal / 2.5
+			output.value = toRF(side0Val, inputVal)
 			break
 		case "j|krf":
-			output.value = (inputVal / 2.5) / 1000
+			output.value = toRF(side0Val, inputVal) / 1000
 			break
 		case "j|mrf":
-			output.value = (inputVal / 2.5) / 1000000
+			output.value = toRF(side0Val, inputVal) / 1000000
 			break
 		case "j|grf":
-			output.value = (inputVal / 2.5) / 1000000000
+			output.value = toRF(side0Val, inputVal) / 1000000000
 			break
 		case "j|eu":
 			output.value = inputVal / 10
@@ -156,16 +158,16 @@ function check() {
 			break
 		// MJ to ...
 		case "mj|rf":
-			output.value = inputVal * 10
+			output.value = toRF(side0Val, inputVal)
 			break
 		case "mj|krf":
-			output.value = (inputVal * 10) / 1000
+			output.value = toRF(side0Val, inputVal) / 1000
 			break
 		case "mj|mrf":
-			output.value = (inputVal * 10) / 1000000
+			output.value = toRF(side0Val, inputVal) / 1000000
 			break
 		case "mj|grf":
-			output.value = (inputVal * 10) / 1000000000
+			output.value = toRF(side0Val, inputVal) / 1000000000
 			break
 		case "mj|eu":
 			output.value = inputVal * 2.5
@@ -178,6 +180,24 @@ function check() {
 			break
 		default:
 			console.error("Invaild choices for energy type from function check()")
+	}
+}
+
+function toRF(unit, val) {
+	switch(unit) {
+		case "eu":
+			return val * 4
+			break
+		case "j":
+			return val / 2.5
+			break
+		case "mj":
+			return val * 10
+			break
+		default:
+			console.error("Invaild unit for function toRF()")
+			return 0
+			break
 	}
 }
 
@@ -200,7 +220,7 @@ function bigRFToRF(unit, val) {
 			break
 		default:
 			console.error("Invaild option for convertion for function sameConvert()")
-			return "Invaild option for convertion for function sameConvert()"
+			return 0
 			break
 	}
 }
