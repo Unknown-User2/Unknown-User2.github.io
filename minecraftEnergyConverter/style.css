@@ -74,6 +74,30 @@ input {
 	align-items: baseline;
 }
 
+/* nav bar stuff */
+ul.nav {
+	list-style-type: none; 
+	margin: 0; 
+	padding: 0; 
+	overflow: hidden; 
+	background-color: #333;
+}
+
+li.nav {
+	float: left;
+}
+
+li.nav a {
+	display: block; 
+	text-align: center; 
+	padding: 14px 16px; 
+	text-decoration: none;
+}
+
+li.nav a:hover {
+	background-color: #111;
+}
+
 /* Removes arrows from number input for chrome safari edge opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
