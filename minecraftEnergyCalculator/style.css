@@ -8,6 +8,14 @@ body {
 	align-items: center;
 }
 
+a {
+	color: rgb(99, 99, 185);
+}
+
+a:visited {
+	color: rgb(127, 68, 182);
+}
+
 select {
 	text-align: center;
 	font-family: "Lato";

@@ -154,6 +154,30 @@ function check() {
 		case "j|mj":
 			output.value = inputVal / 25
 			break
+		// MJ to ...
+		case "mj|rf":
+			output.value = inputVal * 10
+			break
+		case "mj|krf":
+			output.value = (inputVal * 10) / 1000
+			break
+		case "mj|mrf":
+			output.value = (inputVal * 10) / 1000000
+			break
+		case "mj|grf":
+			output.value = (inputVal * 10) / 1000000000
+			break
+		case "mj|eu":
+			output.value = inputVal * 2.5
+			break
+		case "mj|j":
+			output.value = inputVal * 25
+			break
+		case "mj|mj":
+			sameConvert()
+			break
+		default:
+			console.error("Invaild choices for energy type from function check()")
 	}
 }
 
