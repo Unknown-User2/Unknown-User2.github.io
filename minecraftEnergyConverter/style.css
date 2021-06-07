@@ -10,6 +10,7 @@ body {
 
 a {
 	color: rgb(99, 99, 185);
+	text-decoration: none;
 }
 
 a:visited {
@@ -91,7 +92,6 @@ li.nav a {
 	display: block; 
 	text-align: center; 
 	padding: 14px 16px; 
-	text-decoration: none;
 }
 
 li.nav a:hover {

@@ -2,22 +2,23 @@
 
 /* elements */
 body {
-    color: rgb(212, 212, 212);
-    background-color: rgb(46, 46, 46);
-    font-family: "Lato";
-    text-align: center;
-    align-items: center;
+	color: rgb(212, 212, 212);
+	background-color: rgb(46, 46, 46);
+	font-family: "Lato";
+	text-align: center;
+	align-items: center;
 }
 a {
-  color: rgb(99, 99, 185);
+	color: rgb(99, 99, 185);
+	text-decoration: none;
 }
 a:visited {
-  color: rgb(127, 68, 182);
+	color: rgb(127, 68, 182);
 }
 
 /* classes */
 .timg {
-  border-radius: 3px;
+	border-radius: 3px;
 }
 
 
