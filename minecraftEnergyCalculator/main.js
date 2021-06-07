@@ -49,7 +49,7 @@ function check() {
 			output.value = bigRFToRF(side0Val, inputVal)
 			break
 		case "krf|krf":
-			output.value = sameConvert()
+			sameConvert()
 			break
 		case "krf|mrf":
 			output.value = inputVal / 1000
@@ -99,7 +99,7 @@ function check() {
 			output.value = inputVal * 1000
 			break
 		case "grf|grf":
-			output.value = sameConvert()
+			sameConvert()
 			break
 		case "grf|eu":
 			output.value = bigRFToRF(side0Val, inputVal) / 4
@@ -109,6 +109,28 @@ function check() {
 			break
 		case "grf|mj":
 			output.value = bigRFToRF(side0Val, inputVal) / 10
+			break
+		// EU to ...
+		case "eu|rf":
+			output.value = input.value * 4
+			break
+		case "eu|krf":
+			output.value = (input.value * 4) / 1000
+			break
+		case "eu|mrf":
+			output.value = (input.value * 4) / 1000000
+			break
+		case "eu|grf":
+			output.value = (input.value * 4) / 1000000000
+			break
+		case "eu|eu":
+			isameConvert()
+			break
+		case "eu|j":
+			output.value = input.value * 10
+			break
+		case "eu|mj":
+			output.value = input.value / 2.5
 			break
 	}
 }
