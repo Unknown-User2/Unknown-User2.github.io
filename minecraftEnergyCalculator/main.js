@@ -112,25 +112,47 @@ function check() {
 			break
 		// EU to ...
 		case "eu|rf":
-			output.value = input.value * 4
+			output.value = inputVal * 4
 			break
 		case "eu|krf":
-			output.value = (input.value * 4) / 1000
+			output.value = (inputVal * 4) / 1000
 			break
 		case "eu|mrf":
-			output.value = (input.value * 4) / 1000000
+			output.value = (inputVal * 4) / 1000000
 			break
 		case "eu|grf":
-			output.value = (input.value * 4) / 1000000000
+			output.value = (inputVal * 4) / 1000000000
 			break
 		case "eu|eu":
-			isameConvert()
+			sameConvert()
 			break
 		case "eu|j":
-			output.value = input.value * 10
+			output.value = inputVal * 10
 			break
 		case "eu|mj":
-			output.value = input.value / 2.5
+			output.value = inputVal / 2.5
+			break
+		// J to ...
+		case "j|rf":
+			output.value = inputVal / 2.5
+			break
+		case "j|krf":
+			output.value = (inputVal / 2.5) / 1000
+			break
+		case "j|mrf":
+			output.value = (inputVal / 2.5) / 1000000
+			break
+		case "j|grf":
+			output.value = (inputVal / 2.5) / 1000000000
+			break
+		case "j|eu":
+			output.value = inputVal / 10
+			break
+		case "j|j":
+			sameConvert()
+			break
+		case "j|mj":
+			output.value = inputVal / 25
 			break
 	}
 }
