@@ -16,6 +16,78 @@ a:visited {
 	color: rgb(127, 68, 182);
 }
 
+select {
+	text-align: center;
+	font-family: "Lato";
+	font-size: 18.72px;
+	width: 260px;
+	height: 35px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(35, 35, 35);
+	margin: 10px 0 10px 0;
+	color: rgb(212, 212, 212);
+	background-color: rgb(56, 56, 56);
+
+	/* for disabling the arrow */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+input {
+	text-align: center;
+	font-family: "Lato";
+	font-size: 18.72px;
+	width: 260px;
+	height: 35px;
+	margin 10px 0 10px 0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(35, 35, 35);
+	color: rgb(212, 212, 212);
+	background-color: rgb(56, 56, 56);
+}
+
+/* Removes arrows from number input for chrome safari edge opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Removes arrows from number input for firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* ids */
+
+#equals {
+	margin: 10px 10px 10px 10px;
+}
+
+#to {
+	margin: 10px 10px 10px 5px;
+}
+
+#inputsDiv {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: baseline;
+}
+
+#energySelDiv {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: baseline;
+}
+
 /* classes */
 .timg {
 	border-radius: 3px;
